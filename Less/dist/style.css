@@ -1,0 +1,45 @@
+body {
+  display: flex;
+  margin: 0;
+}
+.left-panel {
+  background-color: #9db33e;
+  width: 15%;
+  height: 100vh;
+}
+.left-panel .menu {
+  display: flex;
+  flex-direction: column;
+}
+.left-panel .menu a {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+.left-panel .menu a:hover {
+  background-color: #dfe49b;
+  transform: scaleX(1.05);
+}
+.content {
+  background-color: #f6f7cd;
+  width: 85%;
+  height: 100vh;
+  display: flex;
+}
+.content .card {
+  display: flex;
+  border: 1px solid #264e2c;
+  border-radius: 5px;
+  margin: 1vh;
+}
+.this-day,
+.next-day {
+  min-width: 30%;
+  margin: 1vh 5vw;
+}
+.this-day {
+  background-color: burlywood;
+}
+.next-day {
+  background-color: cadetblue;
+}

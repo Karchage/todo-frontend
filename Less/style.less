@@ -1,0 +1,47 @@
+@import "_color";
+
+body{
+    display: flex;
+    margin: 0;
+}
+.left-panel{
+    background-color: @color-middle;
+    width: 15%;
+    height: 100vh;
+    .menu{
+        display: flex;
+        flex-direction: column;
+        a{
+            text-decoration: none;
+            color:black;
+            text-align: center;
+            &:hover{
+                background-color: @color-prelight;
+                transform: scaleX(1.05);
+            }
+        }
+    }
+}
+.content{
+    background-color: @color-light;
+    width: 85%;
+    height: 100vh;
+    display: flex;
+    
+    .card{
+        display: flex;
+        border: 1px solid @color-black;
+        border-radius: 5px;
+        margin: 1vh;
+    }
+}
+.this-day, .next-day{
+        min-width: 30%;
+        margin: 1vh 5vw;
+}
+.this-day{
+        background-color: burlywood;
+}
+.next-day{
+    background-color: cadetblue;
+}
