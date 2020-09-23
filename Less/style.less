@@ -3,45 +3,110 @@
 body{
     display: flex;
     margin: 0;
+    color: @primaryTextColor;
 }
 .left-panel{
-    background-color: @color-middle;
+    background-color: @primaryColor;
     width: 15%;
     height: 100vh;
     .menu{
+        margin-top: 1vh;
+        border-bottom: 1px solid @dividerColor;
         display: flex;
         flex-direction: column;
-        a{
-            text-decoration: none;
-            color:black;
-            text-align: center;
-            &:hover{
-                background-color: @color-prelight;
+        ul{
+            list-style-type: none;
+            padding: 0;
+            li{
+                height: 3vh;
+                text-align: center; 
+            }
+            li:hover{
+                background-color: @darkPrimaryColor;
                 transform: scaleX(1.05);
             }
+        }
+        a{
+            color:@textPrimaryColor;
+            text-decoration: none;
+            font-weight: bold;
         }
     }
 }
 .content{
-    background-color: @color-light;
+    background-color: @lightPrimaryColor;
     width: 85%;
     height: 100vh;
-    display: flex;
     
     .card{
         display: flex;
-        border: 1px solid @color-black;
-        border-radius: 5px;
+        color: @primaryTextColor;
+        border-bottom: 1px solid @primaryColor;
         margin: 1vh;
     }
 }
 .this-day, .next-day{
+        position: absolute;
+        display: inline-block;
+        background-color: @textPrimaryColor;
+        border: 1px solid none;
+        border-radius: 5px;
         min-width: 30%;
-        margin: 1vh 5vw;
+        min-height: 20vh;
+        margin: 5vh 3vw 1vh 3vw;
 }
-.this-day{
-        background-color: burlywood;
-}
+
 .next-day{
-    background-color: cadetblue;
+
+    margin-left: calc(30% + 10vw);
+    .title{
+        text-align: center;
+    }
+    
+}
+.search-date{
+    justify-content: start;
+    button{
+        padding: 0;
+        img{
+            width: 2vh;
+            height: 2vh;
+        }
+    }
+}
+.plus{
+    position: absolute;
+    left: calc(100% - 15px);
+    top: -15px;
+    &:hover{
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
+    img{
+        width: 30px;
+        height: 30px;
+    }
+}
+.nav-button{
+    display: flex;
+    margin: 1vh;
+    img{
+        width: 30px;
+        height: 30px;
+    }
+    a{
+        margin-left: auto;
+        margin-right: auto;
+        color:@secondaryTextColor;
+        text-decoration: none;
+        &:first-child:hover{
+            transform: translateX(-1px);
+            transition: 0.3s;
+        }
+        &:last-child:hover{
+            transform: translateX(1px);
+            transition: 0.3s;
+        }
+
+    }   
 }
