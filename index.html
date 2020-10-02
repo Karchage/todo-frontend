@@ -3,77 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Less/dist/style.css" >
-    <title>MTD</title>
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="Less/dist/stylemain.css" >
 </head>
 <body>
-    <div class="left-panel">
-        <nav class="menu">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Tickets</a></li>
-                <li><a href="#">Planer</a></li>
-                <li><a href="#">Settings</a></li>
-            </ul>
-        </nav>
-    </div>
-    <div class="content">
-        <div class="this-day">
-            <a class = "plus" href="#"><img src="https://img.icons8.com/cotton/64/000000/plus--v3.png"/></a>
-            <div>This-Day</div>
-            <div class="card">
-                <input type="checkbox">
-                <div>Create page 1</div>
+    <div class="container">
+        <div class="form-container">
+            <div class="signin-signup">
+                
+                <form action="" class="sign-in-form">
+                    <h2 class="title">Sign In</h2>
+                    <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <input type="text" placeholder="Email">
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-key"></i>
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <input type="submit" value="Login" class="btn solid">
+                </form>
+                
+                <form action="" class="sign-up-form">
+                    <h2 class="title">Sign Up</h2>
+                    <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <input type="text" placeholder="Email">
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Name">
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-key"></i>
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-key"></i>
+                        <input type="password" placeholder="Confirm Password">
+                    </div>
+                    <input type="submit" value="Login" class="btn solid">
+                </form>
             </div>
-            <div class="card">
-                <input type="checkbox">
-                <div>Create page 1</div>
-            </div>
-            <div class="card">
-                <input type="checkbox">
-                <div>Create page 1</div>
-            </div>
-            <div class="card">
-                <input type="checkbox">
-                <div>Create page 1</div>
-            </div>
-            <div class="card">
-                <input type="checkbox">
-                <div>Create page 1</div>
-            </div>
-            <div class="card">
-                <input type="checkbox">
-                <div>Create page 1</div>
-            </div>
-            <div class="card">
-                <input type="checkbox">
-                <div>Create page 1</div>
-            </div>
+
         </div>
-        <div class="next-day">
-            <div class="title">Next-Day</div>
-            <a class = "plus" href="#"><img src="https://img.icons8.com/cotton/64/000000/plus--v3.png"/></a>
-            <div class="card search-date">
-                <input type="date">
-                <button><img src="https://img.icons8.com/cotton/64/000000/search--v2.png"/></button>
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>New ?</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut harum alias repellat.</p>
+                    <button class="btn transparent" id="sign-up-btn">Sign Up</button>
+                </div>
             </div>
-            <div class="card">
-                <input type="checkbox">
-                <div>Create page 2</div>
-            </div>
-            <div class="card">
-                <input type="checkbox">
-                <div>Create page 2</div>
-            </div>
-            <div class="card">
-                <input type="checkbox">
-                <div>Create page 2</div>
-            </div>
-            <div class="nav-button">
-                <a href="#"><img src="https://img.icons8.com/cotton/64/000000/circled-left--v1.png"/></a>
-                <a href="#"><img src="https://img.icons8.com/cotton/64/000000/circled-right--v2.png"/></a>
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>New ?</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut harum alias repellat.</p>
+                    <button class="btn transparent" id="sign-in-btn">Sign In</button>
+                </div>
             </div>
         </div>
     </div>
+    <script src="js/main.js"></script>
 </body>
 </html>
