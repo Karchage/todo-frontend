@@ -9,6 +9,25 @@ body{
     background-color: @primaryColor;
     width: 15%;
     height: 100vh;
+    .profile{
+        margin-top: 1rem;
+        border-bottom: 1px solid @dividerColor;
+        .profile-name{
+            text-align: center;
+            font-weight: 600;
+        }
+        a{
+            display: block;
+            text-align: center;
+            color:@textPrimaryColor;
+            text-decoration: none;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
     .menu{
         margin-top: 1vh;
         border-bottom: 1px solid @dividerColor;
@@ -32,6 +51,10 @@ body{
             font-weight: bold;
         }
     }
+}
+.this-day-date{
+    text-align: center;
+    padding: 5px 0px;
 }
 .content{
     background-color: @lightPrimaryColor;
