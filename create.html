@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c4ef0dd853.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Less/dist/style.css" >
+    <title>MTD</title>
+</head>
+<body>
+    <div class="left-panel">
+        <div class="profile">
+            <div class="profile-name">Karchage</div>
+            <a href="#" class="fas fa-sign-out-alt">logout</a>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#" class="fas fa-home">Home</a></li>
+                <li><a href="#" class="fas fa-tasks">Tickets</a></li>
+                <li><a href="#" class="fas fa-archive">Archive</a></li>
+                <li><a href="#" class="fas fa-cog">Settings</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="content">
+        <div class="create-content">
+            <form asp-action="create" asp-controller="home">
+                <div class="create-div">
+                    <label class="create-label fas fa-edit" asp-for="Context"></label>
+                    <input class="create-input" placeholder="Context" type="text" asp-for="Context" />
+                </div>
+                <div class="create-div">
+                    <label class="create-label fas fa-clock" asp-for="DateDue"></label>
+                    <input class="create-input" placeholder="DateDue" type="time" asp-for="DateDue" />
+                </div>
+                <div class="create-div">
+                    <label class="create-label fas fa-calendar-day" asp-for="DateFor"></label>
+                    <input class="create-input" placeholder="DateFor" type="date" asp-for="DateFor" />
+                </div>
+                <div>
+                    <input class="create-button" type="submit" value="Submit" />
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
